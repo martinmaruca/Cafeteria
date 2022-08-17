@@ -1,0 +1,15 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.contenido-menu {
+
+    @include m.tablet { 
+        @include m.grid(2, v.$separacion);
+    }
+}
+
+.texto {
+    p {
+        font-size: 2rem;
+    }
+}
